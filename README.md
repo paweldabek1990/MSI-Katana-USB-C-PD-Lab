@@ -10,12 +10,12 @@
 <h1 align="center">MSI Katana GF76 11UC × Silver Monkey 100 W</h1>
 
 <p align="center"><b>Eksperyment: laptop gamingowy zasilany przez USB-C Power Delivery → adapter DC</b><br/>
-Prawdziwe pomiary · trzy udane obserwacje · niestabilność przy niższym stanie akumulatora · otwarta diagnoza</p>
+Prawdziwe pomiary · cztery sesje bez wykrytych przełączeń · niestabilność przy niższym stanie akumulatora · otwarta diagnoza</p>
 
 <p align="center"><a href="#wyniki">WYNIKI</a> · <a href="#sprzet">SPRZĘT</a> · <a href="#diagnoza">DIAGNOZA</a> · <a href="#dane">DANE</a> · <a href="#roadmap">ROADMAP</a> · <a href="https://github.com/paweldabek1990/MSI-Katana-USB-C-PD-Lab/issues/1">TEST 100 W ↗</a></p>
 
 > [!IMPORTANT]
-> **Potwierdziliśmy działanie — nie potwierdziliśmy pełnej kompatybilności.** Laptop pracował i ładował baterię przez 11 min 17 s oraz 4 min 57 s bez zarejestrowanych przełączeń; późniejszy test SMART 60 podczas aktywności Codexa zakończył się 41 próbkami bez wykrytej zmiany zasilania. Natomiast przy ok. 62–72% stanu akumulatora wielokrotnie tracił zasilanie z powerbanku. To **laboratoryjny dziennik obserwacji**, a nie sprawdzony zamiennik fabrycznego zasilacza.
+> **Potwierdziliśmy działanie — nie potwierdziliśmy pełnej kompatybilności.** Laptop pracował i ładował baterię przez 11 min 17 s oraz 4 min 57 s bez zarejestrowanych przełączeń; późniejszy test SMART 60 podczas aktywności Codexa zakończył się 41 próbkami bez wykrytej zmiany zasilania. Test SMART 60 z kontrolowanym obciążeniem CPU trwał 74 s i także nie wykazał przełączeń (34 próbki). Natomiast przy ok. 62–72% stanu akumulatora wielokrotnie tracił zasilanie z powerbanku. To **laboratoryjny dziennik obserwacji**, a nie sprawdzony zamiennik fabrycznego zasilacza.
 
 ## ⚡ Jak połączyliśmy urządzenia?
 
@@ -24,6 +24,16 @@ Prawdziwe pomiary · trzy udane obserwacje · niestabilność przy niższym stan
 <a id="wyniki"></a>
 ## 📈 Wyniki testów
 
+### Test nr 4: 74 sekundy pod obciążeniem CPU — wynik z 22.10.2026
+
+<p align="center"><img src="assets/powerbank-load-74s.svg" alt="Prawdziwe 34 próbki testu SMART 60 z obciążeniem CPU, bez zarejestrowanych przełączeń AC/BAT" width="100%" /></p>
+
+**34/34 próbek** wskazało zasilanie AC i ładowanie, **0 wykrytych zmian źródła**, najwyższy odczyt CPU **76%**, SoC **83% → 84%**. Program testowy: **SMART 60**, fazy BASE (6 próbek), CPU_TEST (19 próbek) i COOLDOWN (9 próbek). Średnio **+11,99 W netto do baterii** (33 zarejestrowane wartości; nie jest to moc wejściowa USB-C). [Zobacz 34 próbki CSV](data/powerbank-stress-2026-10-22.csv).
+
+Ten krótki wynik **nie oznacza stabilności przy 62–72%** ani pełnej zgodności adaptera YX-10. Krótkie zaniki pomiędzy próbkami mogły nie zostać zarejestrowane.
+
+### Pozostałe obserwacje z powerbankiem
+
 <p align="center"><img src="assets/results.svg" alt="Wizualne porównanie testów i rozłączeń przy niskim stanie naładowania" width="100%" /></p>
 
 | Profil Windows | Stan baterii MSI | Czas | Próbki | Zmiany AC/DC | Co zaobserwowaliśmy |
@@ -31,6 +41,7 @@ Prawdziwe pomiary · trzy udane obserwacje · niestabilność przy niższym stan
 | **ULTRA ECO 40%** | 84% → 89,6% | **11:17** | 61 | **0** | Śr. **+9,36 W** netto do akumulatora |
 | **SMART 60%** | 86% → 89% | **04:57** | 27 | **0** | Ładowanie **+16,58 → +8,77 W** |
 | **SMART 60% + Codex aktywny** | **88% → 90%** | ok. 3 min* | **41** | **0** | Zakończenie: `Completed normally`; raport bez danych mocy wejściowej |
+| **SMART 60% + obciążenie CPU** | **83% → 84%** | **01:14** | **34** | **0** | Wszystkie próbki AC/Charging; CPU do 76% |
 | **SMART 60%** | ok. 70–72% | — | obserwacja | ok. **16 cykli** | Powtarzające się rozłączenia, miganie ekranu |
 | **ULTRA ECO 40%** | **62%** | — | obserwacja | wiele cykli | Brak stabilnego ładowania |
 
@@ -79,7 +90,7 @@ Prawdziwe pomiary · trzy udane obserwacje · niestabilność przy niższym stan
 
 | Kategoria | Stan | Uzasadnienie |
 |:---|:---:|:---|
-| Praca i ładowanie przy 84–90% | **ZMIERZONE** | Raporty Windows: zasilanie AC/Charging, 0 wykrytych zmian źródła w trzech obserwacjach |
+| Praca i ładowanie przy 83–90% | **ZMIERZONE** | 4 sesje: Windows AC/Charging, 0 wykrytych zmian źródła w dostępnych próbkach |
 | Wielokrotne zaniki przy 62–72% | **ZAOBSERWOWANE** | Miganie ekranu i cykliczny reset połączenia |
 | Większy prąd ładowania przy niższym SoC | **HIPOTEZA** | Możliwy wzrost zapotrzebowania, brak pomiaru szczytowego |
 | Ograniczenie kabla 60 W | **MOŻLIWE** | Przewód 3 A ogranicza standardowy tor PD przy 20 V do 60 W |
@@ -103,6 +114,8 @@ Więcej: **[pełna analiza objawów i hipotez](docs/diagnosis.md)**.
 | [**Zgłoś własny pomiar**](../../issues/new/choose) | Formularz GitHub Issues do przyszłych raportów |
 | [**Grafika: tor zasilania**](assets/wiring.svg) | Schemat użytego zestawu |
 | [**Grafika: wyniki**](assets/results.svg) | Porównanie krótkich testów i nieudanych prób |
+| [**Test CPU z powerbankiem**](assets/powerbank-load-74s.svg) | Grafika oparta na 34 próbkach, 74 s |
+| [**Surowe próbki testu CPU**](data/powerbank-stress-2026-10-22.csv) | Pełny przebieg, 34 wiersze danych, 0 przełączeń |
 
 <a id="roadmap"></a>
 ## 🗺️ Następny eksperyment
@@ -111,6 +124,8 @@ Więcej: **[pełna analiza objawów i hipotez](docs/diagnosis.md)**.
 - [x] Zmierzyć ciągłość AC/Charging w dwóch profilach
 - [x] Wykonać trzeci pomiar SMART 60 przy aktywnej pracy Codexa (41 próbek, 0 wykrytych zmian)
 - [x] Udokumentować powtarzalny problem przy niższym stanie baterii
+- [x] Zarejestrować 74-sekundowy test CPU na Silver Monkey: 34 próbki, 0 wykrytych przełączeń
+- [ ] **Sobota 24.10.2026:** po spodziewanym dostarczeniu UGREEN 100 W / 5 A sprawdzić parametry przewodu i porównać z Sollogic 60 W / 3 A ([plan testu](../../issues/1))
 - [ ] Zweryfikować parametry elektryczne i identyfikację YX-10
 - [ ] [Zbadać zgodny elektrycznie tor z kablem USB-C **100 W / 5 A**](../../issues/1)
 - [ ] Zmierzyć moc szczytową odpowiednim miernikiem USB-C PD bez cyklicznych prób na laptopie
@@ -121,7 +136,7 @@ Więcej: **[pełna analiza objawów i hipotez](docs/diagnosis.md)**.
 
 This is an independent field report for an **MSI Katana GF76 11UC**, a **Silver Monkey 100 W USB-C PD power bank**, a **60 W/3 A USB-C cable**, and a **YX-10 20 V PD-to-barrel trigger**.
 
-The running laptop successfully charged in two initial brief tests at higher battery state-of-charge (84–89%) with **zero reported AC/DC source changes** (11:17 in ULTRA ECO 40%, 04:57 in SMART 60%). A third SMART 60 test during reported Codex activity logged 41 samples, no detected power-source transitions, and laptop SoC rising from 88% to 90%. Sampling does not rule out shorter transients. At lower state-of-charge (approximately 62–72%), repeated disconnection/reconnection and screen flicker occurred, including under the lower-power profile. **Root cause remains unproven.** A 100 W e-marked cable has been ordered but not yet tested. **This is not a validated safe power-supply replacement.**
+The running laptop successfully charged in two initial brief tests at higher battery state-of-charge (84–89%) with **zero reported AC/DC source changes** (11:17 in ULTRA ECO 40%, 04:57 in SMART 60%). A third SMART 60 test during reported Codex activity logged 41 samples, no detected power-source transitions, and laptop SoC rising from 88% to 90%. A fourth 74-second SMART 60 controlled CPU-load session logged 34 samples (all AC and Charging), no detected transitions, and SoC 83% to 84%. Comparison against a new UGREEN 100 W / 5 A e-marked cable is planned for 24 October 2026, subject to arrival and adapter verification. Sampling does not rule out shorter transients. At lower state-of-charge (approximately 62–72%), repeated disconnection/reconnection and screen flicker occurred, including under the lower-power profile. **Root cause remains unproven.** A 100 W e-marked cable has been ordered but not yet tested. **This is not a validated safe power-supply replacement.**
 
 </details>
 
