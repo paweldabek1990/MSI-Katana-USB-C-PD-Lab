@@ -24,8 +24,9 @@
 |---|---:|---:|---:|---|
 | ULTRA ECO 40% | 11 min 17 s | 61 | 0 | 84→89,6%; średnio +9,36 W |
 | SMART 60% | 4 min 57 s | 27 | 0 | 86→89%; +16,58→+8,77 W |
+| SMART 60% + zgłoszona aktywność Codexa | ok. 3 min (limit skryptu) | **41** | **0** | 88→90%; raport TXT bez podanej mocy |
 
-W obu testach system Windows wskazywał podłączenie zasilania i ładowanie. Przy 62–72% wystąpiły powtarzalne rozłączenia.
+W pierwszych dwóch testach system Windows wskazywał podłączenie zasilania i ładowanie. Trzeci raport SMART 60 (znacznik 20261022-030105) potwierdza 41 próbek, brak wykrytych przełączeń oraz przyrost SoC z 88 do 90%; zawiera stan `Completed normally`, ale nie podaje wartości mocy ani pełnej historii obciążenia. Codex pracował według bieżącej relacji operatora. Przy 62–72% wystąpiły wcześniejsze powtarzalne rozłączenia.
 
 ## Ograniczenia i możliwe błędy
 
