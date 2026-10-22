@@ -44,20 +44,20 @@ Prawdziwe pomiary · trzy udane obserwacje · niestabilność przy niższym stan
 <a id="baseline"></a>
 ## 🪫 Pomiar poboru na własnej baterii (bez powerbanku)
 
-<p align="center"><img src="assets/battery-comparison.svg" width="100%" alt="Wyniki dwoch testow CPU 80 i 40 procent, 12 probek kazdy" /></p>
+<p align="center"><img src="assets/battery-comparison.svg" width="100%" alt="Wyniki dwóch testów CPU 80% i 40%, po 12 próbek każdy" /></p>
 
 | Warunki | BATERIA 80% | ULTRA ECO 40% |
 |:--|--:|--:|
-| Liczba probek | 12 | 12 |
-| Sredni pobor z baterii MSI | **20,67 W** | **19,07 W** |
-| Najwyzszy zarejestrowany odczyt | 41,75 W | 21,87 W |
-| Srednie obciazenie CPU | 44,08% | 50,75% |
+| Liczba próbek | 12 | 12 |
+| Średni pobór z baterii MSI | **20,67 W** | **19,07 W** |
+| Najwyższy zarejestrowany odczyt | 41,75 W | 21,87 W |
+| Średnie obciążenie CPU | 44,08% | 50,75% |
 | Stan baterii MSI | 89% do 87% | 80% do 78% |
-| Zasilanie zewnetrzne | brak | brak |
+| Zasilanie zewnętrzne | brak | brak |
 
-**Wynik:** sredni pobor ULTRA ECO byl w tym pomiarze o **1,60 W (7,7%)** nizszy, ale testy mialy inny stan baterii i zmienne obciazenie. To **nie dowodzi**, ze sam limit CPU zmniejszyl szczytowy pobor. Maksimum dotyczy tylko odczytow probkowanych co okolo 11 sekund.
+**Wynik:** średni pobór ULTRA ECO był w tym pomiarze o **1,60 W (7,7%)** niższy, ale testy miały inny stan baterii (89–87% vs 80–78%) i zmienne obciążenie. To **nie dowodzi**, że sam limit CPU zmniejszył szczytowy pobór. Najwyższy odczyt nie jest szczytem chwilowym — próbki rejestrowano co około 11–12 sekund. Procent wykorzystania CPU nie jest tym samym co maksymalny stan procesora Windows: przy profilu 40% wskazania CPU mogą przekraczać 40%.
 
-[Metodyka i porownanie](docs/battery-only-comparison-2026-10-22.md) · [24 probki CSV](data/battery-only-80-vs-40-2026-10-22.csv) · [Wykres SVG](assets/battery-comparison.svg)
+[Metodyka i porównanie](docs/battery-only-comparison-2026-10-22.md) · [24 próbki CSV](data/battery-only-80-vs-40-2026-10-22.csv) · [Wykres SVG](assets/battery-comparison.svg)
 
 <a id="sprzet"></a>
 ## 🧰 Zestaw pomiarowy
