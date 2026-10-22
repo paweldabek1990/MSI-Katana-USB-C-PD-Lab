@@ -1,0 +1,44 @@
+name: "Nowy pomiar / Measurement"
+description: "Zaproponuj wynik z legalnego, bezpiecznie skonfigurowanego testu zasilania."
+title: "[DATA] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Bezpieczeństwo:** nie powtarzaj prób, w których laptop wielokrotnie rozłącza zasilanie. Podawaj tylko wykonane, udokumentowane pomiary.
+  - type: input
+    id: laptop
+    attributes:
+      label: "Model laptopa"
+      placeholder: "MSI Katana GF76 11UC"
+    validations:
+      required: true
+  - type: input
+    id: power-source
+    attributes:
+      label: "Zasilacz / powerbank, port i profil PD"
+      placeholder: "20 V / ... A; model ..."
+    validations:
+      required: true
+  - type: input
+    id: cable
+    attributes:
+      label: "Kabel i trigger PD-to-DC"
+      placeholder: "Model, 3 A / 5 A, e-marker, wtyk DC"
+    validations:
+      required: true
+  - type: textarea
+    id: methodology
+    attributes:
+      label: "Metoda, aparatura i warunki"
+      description: "Stan baterii, obciążenie, sposób pomiaru, dokładność odczytów, czas."
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: "Wynik i zaobserwowane problemy"
+      description: "Oddziel potwierdzone dane pomiarowe od hipotez."
+    validations:
+      required: true
