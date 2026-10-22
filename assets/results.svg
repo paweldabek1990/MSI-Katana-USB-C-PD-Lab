@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="605" viewBox="0 0 1600 605" role="img" aria-label="Test results, Ultra Eco 11m17s and Smart 60 4m57s stable in observed tests; repeated flicker at lower battery charge">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-label="Test results: three observed stable sessions at 84 to 90 percent laptop battery; disconnection at 62 to 72 percent">
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080d1f"/><stop offset="1" stop-color="#111a34"/></linearGradient>
 <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#123b3b"/><stop offset="1" stop-color="#122038"/></linearGradient>
@@ -6,7 +6,7 @@
 <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#442b26"/><stop offset="1" stop-color="#25182b"/></linearGradient>
 <filter id="f"><feGaussianBlur stdDeviation="16"/></filter>
 </defs>
-<rect width="1600" height="605" rx="26" fill="url(#bg)"/>
+<rect width="1600" height="760" rx="26" fill="url(#bg)"/>
 <circle cx="275" cy="140" r="120" fill="#10b981" opacity=".09" filter="url(#f)"/>
 <circle cx="820" cy="140" r="120" fill="#38bdf8" opacity=".11" filter="url(#f)"/>
 <circle cx="1350" cy="140" r="120" fill="#fb923c" opacity=".08" filter="url(#f)"/>
@@ -52,7 +52,24 @@
 <rect x="1091" y="443" width="435" height="36" rx="10" fill="#603129" stroke="#cd634c"/>
 <text x="1309" y="468" text-anchor="middle" fill="#ffd0ad" font-weight="700" font-size="17">ROOT CAUSE NOT CONFIRMED</text>
 </g>
-<path d="M47 538H1554" stroke="#26445e" stroke-width="1.2"/>
-<text x="49" y="577" font-family="Arial,sans-serif" font-size="18" fill="#a7bcd9">Net charging: ULTRA ECO avg +9.36W  ·  SMART 60 from +16.58W to +8.77W</text>
-<text x="1548" y="577" text-anchor="end" font-family="Arial,sans-serif" font-size="16" fill="#718ca9">No fabricated time-series data</text>
+
+<!-- Third measured run. The source TXT records 41 samples, 0 transitions, and 88 to 90 percent. Exact elapsed time is not recorded. -->
+<g font-family="Arial,sans-serif">
+<rect x="46" y="534" width="1509" height="142" rx="20" fill="#112642" stroke="#566eeb" stroke-opacity=".8" stroke-width="2"/>
+<rect x="69" y="554" width="203" height="30" rx="14" fill="#1f375a" stroke="#8aa3ff"/>
+<circle cx="90" cy="569" r="6.5" fill="#6ee7c8"/>
+<text x="108" y="575" font-size="16" font-weight="800" letter-spacing=".8" fill="#c3e6ff">THIRD TEST / LOGGED</text>
+<text x="70" y="626" font-size="35" font-weight="800" fill="#edfaff">SMART 60 + CODEX</text>
+<text x="71" y="650" font-size="16.5" fill="#9ab9d9">Codex activity reported by operator</text>
+<path d="M613 554V656 M893 554V656 M1159 554V656" stroke="#43638b" stroke-width="1.5"/>
+<text x="642" y="577" font-size="16" fill="#9cbce0">SAMPLES</text>
+<text x="642" y="632" font-size="48" font-weight="800" fill="#f1fbff">41</text>
+<text x="923" y="577" font-size="16" fill="#9cbce0">AC/DC CHANGES</text>
+<text x="924" y="632" font-size="48" font-weight="800" fill="#5cf2c8">0</text>
+<text x="1187" y="577" font-size="16" fill="#9cbce0">BATTERY SoC</text>
+<text x="1186" y="629" font-size="42" font-weight="800" fill="#b4e5ff">88 → 90%</text>
+</g>
+<path d="M47 706H1554" stroke="#26445e" stroke-width="1.2"/>
+<text x="49" y="740" font-family="Arial,sans-serif" font-size="18" fill="#a7bcd9">Net charging: ULTRA ECO avg +9.36W  ·  SMART 60 from +16.58W to +8.77W</text>
+<text x="1548" y="740" text-anchor="end" font-family="Arial,sans-serif" font-size="16" fill="#718ca9">No fabricated time-series data</text>
 </svg>
