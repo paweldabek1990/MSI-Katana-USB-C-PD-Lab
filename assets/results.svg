@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="345" viewBox="0 0 1280 345" role="img" aria-label="Observed results: two stable short tests; unstable at lower battery states">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#091327"/><stop offset="1" stop-color="#0f1c34"/></linearGradient></defs>
+<rect width="1280" height="345" rx="20" fill="url(#bg)"/>
+<text x="35" y="46" fill="#f0f9ff" font-size="27" font-weight="700" font-family="Arial, sans-serif">02   WYNIKI / MEASURED VS. OBSERVED</text>
+<g font-family="Arial, sans-serif">
+<rect x="34" y="73" width="387" height="235" rx="17" fill="#0d3135" stroke="#2dd4bf" stroke-width="2"/>
+<circle cx="76" cy="115" r="22" fill="#134e4a"/><path d="M65 115l8 8 14-18" fill="none" stroke="#5eead4" stroke-width="4" stroke-linecap="round"/>
+<text x="111" y="121" font-size="23" font-weight="700" fill="#5eead4">ULTRA ECO / 40%</text>
+<text x="62" y="175" font-size="45" font-weight="700" fill="#f0fdfa">11:17</text><text x="235" y="171" font-size="25" font-weight="700" fill="#a7f3d0">0 resetow</text>
+<text x="62" y="207" font-size="18" fill="#b9d5d4">61 probek   /   +9.36 W netto</text>
+<text x="62" y="244" font-size="23" font-weight="700" fill="#6ee7b7">84%  →  89.6%</text>
+<rect x="62" y="267" width="325" height="12" rx="6" fill="#153e43"/><rect x="62" y="267" width="295" height="12" rx="6" fill="#34d399"/>
+<rect x="446" y="73" width="387" height="235" rx="17" fill="#162746" stroke="#38bdf8" stroke-width="2"/>
+<circle cx="488" cy="115" r="22" fill="#164e63"/><path d="M477 115l8 8 14-18" fill="none" stroke="#67e8f9" stroke-width="4" stroke-linecap="round"/>
+<text x="524" y="121" font-size="23" font-weight="700" fill="#7dd3fc">SMART / 60%</text>
+<text x="474" y="175" font-size="45" font-weight="700" fill="#f0f9ff">04:57</text><text x="647" y="171" font-size="25" font-weight="700" fill="#bae6fd">0 resetow</text>
+<text x="474" y="207" font-size="18" fill="#b9d1e6">27 probek   /   +16.58→8.77 W</text>
+<text x="474" y="244" font-size="23" font-weight="700" fill="#7dd3fc">86%  →  89%</text>
+<rect x="474" y="267" width="325" height="12" rx="6" fill="#133856"/><rect x="474" y="267" width="289" height="12" rx="6" fill="#38bdf8"/>
+<rect x="858" y="73" width="388" height="235" rx="17" fill="#36201f" stroke="#fb923c" stroke-width="2"/>
+<circle cx="900" cy="115" r="22" fill="#713f1c"/><text x="893" y="123" font-size="27" font-weight="800" fill="#fed7aa">!</text>
+<text x="936" y="121" font-size="23" font-weight="700" fill="#fdba74">LOW SoC / FAIL</text>
+<text x="885" y="177" font-size="42" font-weight="700" fill="#ffedd5">62–72%</text>
+<text x="885" y="215" font-size="19" fill="#fed7aa">Wielokrotne przerwy AC/DC</text>
+<text x="885" y="245" font-size="18" fill="#f4b99b">SMART 60% i ULTRA ECO 40%</text>
+<text x="885" y="274" font-size="16" fill="#f8cdb5">Przyczyna pozostaje nieustalona</text>
+</g>
+</svg>
