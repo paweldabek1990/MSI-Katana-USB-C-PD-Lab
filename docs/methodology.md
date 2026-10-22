@@ -28,7 +28,7 @@
 
 ## Test z obciążeniem na Silver Monkey — 22 października 2026, 03:53
 
-**Oryginalny raport:** [34 próbki zasilania, obciążenia i przepływu energii netto baterii](../data/powerbank-stress-2026-10-22.csv). Plik w repozytorium to normalizacja wartości źródłowego CSV (separator dziesiętny: kropka, osobna kolumna czasu od początku testu).
+**Znormalizowany zapis źródłowych próbek:** [34 odczyty zasilania, obciążenia i przepływu energii netto baterii](../data/powerbank-stress-2026-10-22.csv). Plik w repozytorium to normalizacja wartości źródłowego CSV (separator dziesiętny: kropka, osobna kolumna czasu od początku testu).
 
 - Plan Windows: **SMART 60%**; po zakończeniu skrypt przywracał ULTRA ECO 40%.
 - Tor: Silver Monkey 100 W → kabel Sollogic 60 W / 3 A → trigger YX-10 → wejście DC MSI.
