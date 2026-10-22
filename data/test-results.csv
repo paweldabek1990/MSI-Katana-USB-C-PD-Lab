@@ -5,3 +5,4 @@ date,mode,cpu_state_max_ac_dc_percent,battery_start_percent,battery_end_percent,
 2026-10-22,ULTRA ECO,40,62,,,,repeated visually observed,,unstable cycling,user observation
 2026-10-22,SMART 60,60,88,90,,41,0,,stable during sampled observation with Codex activity,logged summary
 2026-10-22,SMART 60 CPU stress,60,83,84,74,34,0,average +11.99 W battery net (33 valid samples),stable during 74-second sampled test,logged CPU stress
+2026-10-22,CODEX WORK 80 normal use,80,89,93,604,139,0,average +10.61 W battery net,stable after startup; approximately 5 screen blackouts during initial connection,logged normal use plus operator observation
