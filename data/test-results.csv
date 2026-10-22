@@ -1,0 +1,5 @@
+date,mode,cpu_state_max_ac_dc_percent,battery_start_percent,battery_end_percent,duration_seconds,samples,observed_ac_dc_transitions,battery_net_power,status,measurement_type
+2026-10-22,ULTRA ECO,40,84,89.6,677,61,0,average +9.36 W,stable during observation,logged
+2026-10-22,SMART 60,60,86,89,297,27,0,from +16.58 W to +8.77 W,stable during observation,console log
+2026-10-22,SMART 60,60,~70-72,,,,~16 visually observed,,unstable cycling,user observation
+2026-10-22,ULTRA ECO,40,62,,,,repeated visually observed,,unstable cycling,user observation
