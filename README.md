@@ -41,6 +41,24 @@ Prawdziwe pomiary · trzy udane obserwacje · niestabilność przy niższym stan
 > [!NOTE]
 > Dane **BatteryRateW** dotyczą energii wpływającej **do baterii laptopa**, a nie całkowitej mocy pobieranej z powerbanku. Wyświetlacz Silver Monkey przy stabilnym ładowaniu wskazywał orientacyjnie **20 V i 1,5–2,0 A (30–40 W)**. Nie zarejestrowano wartości szczytowych w chwili rozłączenia.
 
+<a id="baseline"></a>
+## 🪫 Pomiar poboru na własnej baterii (bez powerbanku)
+
+<p align="center"><img src="assets/battery-comparison.svg" width="100%" alt="Wyniki dwoch testow CPU 80 i 40 procent, 12 probek kazdy" /></p>
+
+| Warunki | BATERIA 80% | ULTRA ECO 40% |
+|:--|--:|--:|
+| Liczba probek | 12 | 12 |
+| Sredni pobor z baterii MSI | **20,67 W** | **19,07 W** |
+| Najwyzszy zarejestrowany odczyt | 41,75 W | 21,87 W |
+| Srednie obciazenie CPU | 44,08% | 50,75% |
+| Stan baterii MSI | 89% do 87% | 80% do 78% |
+| Zasilanie zewnetrzne | brak | brak |
+
+**Wynik:** sredni pobor ULTRA ECO byl w tym pomiarze o **1,60 W (7,7%)** nizszy, ale testy mialy inny stan baterii i zmienne obciazenie. To **nie dowodzi**, ze sam limit CPU zmniejszyl szczytowy pobor. Maksimum dotyczy tylko odczytow probkowanych co okolo 11 sekund.
+
+[Metodyka i porownanie](docs/battery-only-comparison-2026-10-22.md) · [24 probki CSV](data/battery-only-80-vs-40-2026-10-22.csv) · [Wykres SVG](assets/battery-comparison.svg)
+
 <a id="sprzet"></a>
 ## 🧰 Zestaw pomiarowy
 
