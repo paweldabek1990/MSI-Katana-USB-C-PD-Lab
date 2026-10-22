@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="290" viewBox="0 0 1280 290" role="img" aria-label="Wiring flow: Silver Monkey PD 100W to Sollogic 60W cable to YX-10 to MSI Katana">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071326"/><stop offset="1" stop-color="#10233f"/></linearGradient><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#38bdf8"/></marker></defs>
+<rect width="1280" height="290" rx="20" fill="url(#bg)"/>
+<text x="36" y="46" font-size="24" fill="#e2e8f0" font-family="Arial, sans-serif" font-weight="700">01   TOR ZASILANIA / POWER PATH</text>
+<g font-family="Arial, sans-serif" text-anchor="middle">
+<rect x="31" y="78" width="254" height="134" rx="17" fill="#102e46" stroke="#0ea5e9" stroke-width="2"/>
+<rect x="55" y="104" width="60" height="75" rx="8" fill="#071524" stroke="#7dd3fc"/><rect x="67" y="119" width="35" height="18" rx="3" fill="#183750"/><text x="84" y="132" fill="#34d399" font-size="9">PD</text>
+<text x="183" y="126" fill="#e0f2fe" font-size="20" font-weight="700">SILVER MONKEY</text><text x="183" y="154" fill="#7dd3fc" font-size="16">20 000 mAh</text><text x="183" y="177" fill="#94a3b8" font-size="15">USB-C PD 100 W max</text>
+<rect x="345" y="78" width="260" height="134" rx="17" fill="#162543" stroke="#818cf8" stroke-width="2"/>
+<path d="M385 147 C399 104 446 113 450 146 C456 173 498 172 510 131" fill="none" stroke="#8ca3ba" stroke-width="11" stroke-linecap="round"/>
+<rect x="379" y="141" width="24" height="14" rx="5" fill="#cbd5e1"/><rect x="503" y="123" width="25" height="14" rx="5" fill="#cbd5e1"/>
+<text x="479" y="188" fill="#e0e7ff" font-size="20" font-weight="700">SOLLOGIC 60 W</text><text x="479" y="207" fill="#b5bed3" font-size="14">USB-C / 3 A</text>
+<rect x="667" y="78" width="247" height="134" rx="17" fill="#14253e" stroke="#f59e0b" stroke-width="2"/>
+<path d="M697 120 h53 q10 0 10 10 v35 h-63Z" fill="#030915" stroke="#cbd5e1" stroke-width="2"/><path d="M759 146h22" stroke="#fbbf24" stroke-width="10" stroke-linecap="round"/>
+<text x="837" y="124" fill="#fef3c7" font-size="24" font-weight="700">YX-10</text><text x="835" y="150" fill="#fcd34d" font-size="15">20 V PD</text><text x="791" y="181" fill="#aebfd5" font-size="15">USB-C to DC trigger</text>
+<rect x="974" y="78" width="274" height="134" rx="17" fill="#15243e" stroke="#22d3ee" stroke-width="2"/>
+<rect x="1001" y="105" width="94" height="65" rx="6" fill="#050c1d" stroke="#67e8f9" stroke-width="3"/><path d="M987 176h119l16 13H973Z" fill="#64748b"/>
+<text x="1159" y="127" fill="#e0f2fe" font-size="21" font-weight="700">MSI KATANA</text><text x="1159" y="151" fill="#7dd3fc" font-size="18">GF76 11UC</text><text x="1159" y="177" fill="#94a3b8" font-size="14">20 V / 150 W OEM</text>
+</g>
+<g stroke="#38bdf8" stroke-width="3" fill="none" marker-end="url(#arr)"><path d="M292 144H336"/><path d="M611 144H658"/><path d="M921 144H965"/></g>
+<rect x="35" y="238" width="1210" height="30" rx="9" fill="#3f261b"/><text x="52" y="258" font-family="Arial, sans-serif" font-size="14" fill="#fdba74">UWAGA: polaryzacja i identyfikacja pinu MSI nie sa potwierdzone dla YX-10; nie uzywac przy cyklicznym rozlaczaniu.</text>
+</svg>
