@@ -23,5 +23,5 @@
 <g fill="#34d8f7"><path d="M409 244l9 7-9 7z"/><path d="M793 244l9 7-9 7z"/><path d="M1178 244l9 7-9 7z"/></g>
 <rect x="47" y="459" width="1503" height="38" rx="12" fill="#39251e" stroke="#a85c3e" stroke-width="1.4"/>
 <text x="69" y="484" fill="#ffc99b" font-size="16" font-family="Arial,sans-serif">!</text>
-<text x="92" y="484" fill="#e9bda3" font-size="15.5" font-family="Arial,sans-serif">YK-10 / YX-10 pin ID compatibility is NOT verified · 60 W cable limits standard 20V/3A operation · stop on repeated disconnects</text>
+<text x="92" y="484" fill="#e9bda3" font-size="15.5" font-family="Arial,sans-serif">YX-10 pin ID compatibility is NOT verified · 60 W cable limits standard 20V/3A operation · stop on repeated disconnects</text>
 </svg>
