@@ -12,7 +12,7 @@
 <p align="center"><b>Eksperyment: laptop gamingowy zasilany przez USB-C Power Delivery → adapter DC</b><br/>
 Prawdziwe pomiary · dwa udane testy · niestabilność przy niższym stanie akumulatora · otwarta diagnoza</p>
 
-<p align="center"><a href="#-wyniki-testów">WYNIKI</a> · <a href="#-zestaw-pomiarowy">SPRZĘT</a> · <a href="#-diagnoza">DIAGNOZA</a> · <a href="#-dane-i-dokumentacja">DANE</a> · <a href="#-następny-eksperyment">ROADMAP</a></p>
+<p align="center"><a href="#wyniki">WYNIKI</a> · <a href="#sprzet">SPRZĘT</a> · <a href="#diagnoza">DIAGNOZA</a> · <a href="#dane">DANE</a> · <a href="#roadmap">ROADMAP</a> · <a href="https://github.com/paweldabek1990/MSI-Katana-USB-C-PD-Lab/issues/1">TEST 100 W ↗</a></p>
 
 > [!IMPORTANT]
 > **Potwierdziliśmy działanie — nie potwierdziliśmy pełnej kompatybilności.** Laptop pracował i ładował baterię przez 11 min 17 s oraz 4 min 57 s bez zarejestrowanych przełączeń. Natomiast przy ok. 62–72% stanu akumulatora wielokrotnie tracił zasilanie z powerbanku. To **laboratoryjny dziennik obserwacji**, a nie sprawdzony zamiennik fabrycznego zasilacza.
@@ -21,6 +21,7 @@ Prawdziwe pomiary · dwa udane testy · niestabilność przy niższym stanie aku
 
 <p align="center"><img src="assets/wiring.svg" alt="Schemat: Silver Monkey, kabel Sollogic 60 W, adapter YX-10, MSI Katana" width="100%" /></p>
 
+<a id="wyniki"></a>
 ## 📈 Wyniki testów
 
 <p align="center"><img src="assets/results.svg" alt="Wizualne porównanie testów i rozłączeń przy niskim stanie naładowania" width="100%" /></p>
@@ -37,6 +38,7 @@ Prawdziwe pomiary · dwa udane testy · niestabilność przy niższym stanie aku
 > [!NOTE]
 > Dane **BatteryRateW** dotyczą energii wpływającej **do baterii laptopa**, a nie całkowitej mocy pobieranej z powerbanku. Wyświetlacz Silver Monkey przy stabilnym ładowaniu wskazywał orientacyjnie **20 V i 1,5–2,0 A (30–40 W)**. Nie zarejestrowano wartości szczytowych w chwili rozłączenia.
 
+<a id="sprzet"></a>
 ## 🧰 Zestaw pomiarowy
 
 | Komponent | Specyfikacja / status |
@@ -51,6 +53,7 @@ Prawdziwe pomiary · dwa udane testy · niestabilność przy niższym stanie aku
 
 **Warto pamiętać:** ustawienie maksymalnego stanu procesora na 40% albo 60% nie ogranicza mocy całego laptopa do 40 albo 60 W. W szczególności nie ogranicza wprost prądu ładowania jego baterii.
 
+<a id="diagnoza"></a>
 ## 🔎 Diagnoza
 
 | Kategoria | Stan | Uzasadnienie |
@@ -67,6 +70,7 @@ Prawdziwe pomiary · dwa udane testy · niestabilność przy niższym stanie aku
 
 Więcej: **[pełna analiza objawów i hipotez](docs/diagnosis.md)**.
 
+<a id="dane"></a>
 ## 📂 Dane i dokumentacja
 
 | Zasób | Do czego służy |
@@ -74,16 +78,19 @@ Więcej: **[pełna analiza objawów i hipotez](docs/diagnosis.md)**.
 | [**Metodyka testów**](docs/methodology.md) | Co i jak było mierzone, czego dane *nie* potwierdzają |
 | [**Analiza awarii**](docs/diagnosis.md) | Hipotezy przeciążenia, negocjacji PD i zgodności adaptera |
 | [**Zestawienie CSV**](data/test-results.csv) | Dane zagregowane gotowe do wykorzystania w arkuszu |
+| [**Słownik danych**](data/README.md) | Interpretacja kolumn i rodzaju dowodów |
+| [**Zgłoś własny pomiar**](../../issues/new/choose) | Formularz GitHub Issues do przyszłych raportów |
 | [**Grafika: tor zasilania**](assets/wiring.svg) | Schemat użytego zestawu |
 | [**Grafika: wyniki**](assets/results.svg) | Porównanie krótkich testów i nieudanych prób |
 
+<a id="roadmap"></a>
 ## 🗺️ Następny eksperyment
 
 - [x] Potwierdzić ładowanie z USB-C PD → DC przy wysokim stanie baterii
 - [x] Zmierzyć ciągłość AC/Charging w dwóch profilach
 - [x] Udokumentować powtarzalny problem przy niższym stanie baterii
 - [ ] Zweryfikować parametry elektryczne i identyfikację YX-10
-- [ ] Sprawdzić tor z certyfikowanym przewodem USB-C **100 W / 5 A**
+- [ ] [Zbadać zgodny elektrycznie tor z kablem USB-C **100 W / 5 A**](../../issues/1)
 - [ ] Zmierzyć moc szczytową odpowiednim miernikiem USB-C PD bez cyklicznych prób na laptopie
 - [ ] Ustalić bezpieczne warunki pracy albo jednoznacznie odrzucić konfigurację
 
