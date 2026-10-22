@@ -22,6 +22,15 @@ Prawdziwe pomiary · cztery sesje bez wykrytych przełączeń · niestabilność
 <p align="center"><img src="assets/wiring.svg" alt="Schemat: Silver Monkey, kabel Sollogic 60 W, adapter YX-10, MSI Katana" width="100%" /></p>
 
 <a id="wyniki"></a>
+## Test 10 minut — CODEX WORK 80 (22 października 2026)
+
+**Normalna praca ChatGPT i Codexa z podłączonym Silver Monkey:** pomiar od 14:33:52 do 14:43:56 (**10 min 4 s**). Zarejestrowano **139 próbek AC / 139 ładowania / 0 wykrytych zmian źródła**. Bateria MSI **89% → 93%**, CPU średnio **20,8%**, najwyższy odczyt **56%**, średnia moc netto do baterii **+10,61 W** (138 niepustych odczytów). Nie jest to całkowita moc pobierana z powerbanku.
+
+> [!WARNING]
+> Użytkownik zaobserwował **około 5 krótkich zaników ekranu wyłącznie bezpośrednio po podłączeniu zasilania**, zanim rozpoczęła się stabilna praca. Później nie zauważył żadnego zaniku. Początkowe miganie nie jest potwierdzoną prawidłową negocjacją USB-C PD i może wskazywać na niestabilność toru. Krótkie zaniki między próbkami mogły być niewykryte. **Dalsze próby wymagają sprawdzenia YX-10 oraz zgodności złącz.**
+
+Ten test potwierdza stabilność **w czasie obserwowanego odcinka**, nie długoterminową niezawodność konfiguracji ani pracę przy niższym SoC.
+
 ## 📈 Wyniki testów
 
 ### Test nr 4: 74 sekundy pod obciążeniem CPU — wynik z 22.10.2026
